@@ -1,6 +1,4 @@
-// script-host.js
-import { db } from './firebase.js';
-import { ref, push, set, onValue, update, get, child } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-database.js";
+import { db, ref, push, onValue, update } from "./firebase.js";
 
 let gameKey = null;
 let questions = [];
@@ -189,3 +187,4 @@ document.getElementById('restart').onclick = () => {
 };
 
 genGame();
+
