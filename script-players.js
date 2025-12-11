@@ -1,6 +1,4 @@
-// script-player.js
-import { db } from './firebase.js';
-import { ref, push, set, onValue, update, get, child } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-database.js";
+import { db, ref, push, set, onValue, update } from "./firebase.js";
 
 const params = new URLSearchParams(location.search);
 const gameId = params.get('game');
@@ -91,3 +89,4 @@ function listenLeaderboard() {
     }
   });
 }
+
