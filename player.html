@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Player — Digital Feudalism Quiz</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark player">
+<div class="container">
+  <h1>Join Quiz</h1>
+  <div id="joinBox" class="panel">
+    <label>Your name</label>
+    <input id="playerName" placeholder="e.g. Arman" />
+    <button id="joinBtn">Join</button>
+    <div id="joinStatus"></div>
+  </div>
+
+  <div id="gameBox" class="panel hidden">
+    <div id="roundInfo"></div>
+    <div id="questionText"></div>
+    <div id="choices"></div>
+    <div id="youStatus"></div>
+  </div>
+
+  <div id="finished" class="panel hidden">
+    <h2>Finished</h2>
+    <div id="yourScore"></div>
+  </div>
+</div>
+
+<script type="module" src="firebase.js"></script>
+<script type="module" src="script-player.js"></script>
+</body>
+</html>

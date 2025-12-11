@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Host — Digital Feudalism Quiz</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark">
+<div class="container host">
+  <h1>Digital Feudalism — Host</h1>
+  <div id="lobby">
+    <div class="panel">
+      <h2>Lobby</h2>
+      <div id="qrWrap">
+        <canvas id="qr"></canvas>
+        <div class="small">Scan to join</div>
+      </div>
+      <div class="info">
+        <p>Game link: <span id="gameLink">—</span></p>
+        <button id="regen">Regenerate Game</button>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Players</h2>
+      <ul id="playersList"></ul>
+      <div class="controls">
+        <button id="startBtn">Start Game</button>
+        <button id="nextQ" disabled>Next Question</button>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Current</h2>
+      <div id="currentQuestion">No question yet</div>
+      <div id="answersSummary"></div>
+    </div>
+  </div>
+
+  <div id="podium" class="panel hidden">
+    <h2>Podium</h2>
+    <ol id="leaderboard"></ol>
+    <button id="restart">Play Again</button>
+  </div>
+</div>
+
+<script type="module" src="firebase.js"></script>
+<script type="module" src="script-host.js"></script>
+</body>
+</html>
